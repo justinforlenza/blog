@@ -2,3 +2,12 @@ Hello, welcome to my blog. You can feel free to delve into a treasure trove of t
 
 
 ![A professional photo of me](/assets/my_picture.jpg)
+
+## Recent Posts
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
